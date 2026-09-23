@@ -18,7 +18,9 @@
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
         body { background: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.7; }
         .container { max-width: 780px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 40px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
-        .back-link { display: inline-block; color: var(--primary); text-decoration: none; font-size: 13px; font-weight: 700; margin-bottom: 24px; }
+        .top-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+        .top-nav a { color: var(--primary); text-decoration: none; font-size: 13px; font-weight: 700; }
+        .top-nav a:hover { text-decoration: underline; }
         h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; color: #FFFFFF; }
         .effective { color: var(--text-muted); font-size: 13px; margin-bottom: 30px; }
         h2 { font-size: 20px; font-weight: 700; color: var(--gold); margin: 28px 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
@@ -28,11 +30,16 @@
         .highlight-box { background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 14px; padding: 18px; margin: 20px 0; }
         .highlight-box strong { color: var(--primary); }
         footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 13px; }
+        .footer-links { display: flex; justify-content: center; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
+        .footer-links a { color: #38BDF8; text-decoration: none; font-weight: 600; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to OmniLabs Hub</a>
+        <div class="top-nav">
+            <a href="index.html">&larr; Back to OmniLabs Hub</a>
+            <a href="terms.html">View Terms of Service &rarr;</a>
+        </div>
         <h1>Privacy Policy & Data Safety</h1>
         <p class="effective"><strong>Application:</strong> Hikmah: Quran, Prayer, Azkar &bull; <strong>Effective Date:</strong> September 2026 &bull; <strong>Developer:</strong> OmniLabs</p>
 
@@ -66,6 +73,13 @@
         <p><strong>Email:</strong> app.omnilabs.dev@gmail.com<br><strong>Studio:</strong> OmniLabs</p>
 
         <footer>
+            <div class="footer-links">
+                <a href="index.html">Legal Hub</a>
+                <span>&bull;</span>
+                <a href="smarttools.html">Smart Tools Privacy</a>
+                <span>&bull;</span>
+                <a href="terms.html">Terms of Service</a>
+            </div>
             &copy; 2026 OmniLabs. All rights reserved.
         </footer>
     </div>
