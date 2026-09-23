@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smart Tools Suite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0B0F17;
+            --surface: #141B26;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #F8FAFC;
+            --text-muted: #94A3B8;
+            --primary: #38BDF8;
+            --gold: #F59E0B;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.7; }
+        .container { max-width: 780px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 40px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+        .back-link { display: inline-block; color: var(--primary); text-decoration: none; font-size: 13px; font-weight: 700; margin-bottom: 24px; }
+        h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; color: #FFFFFF; }
+        .effective { color: var(--text-muted); font-size: 13px; margin-bottom: 30px; }
+        h2 { font-size: 20px; font-weight: 700; color: var(--gold); margin: 28px 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+        p, ul { color: #CBD5E1; font-size: 15px; margin-bottom: 14px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight-box { background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; padding: 18px; margin: 20px 0; }
+        .highlight-box strong { color: var(--primary); }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to OmniLabs Hub</a>
+        <h1>Privacy Policy & Sensor Safety</h1>
+        <p class="effective"><strong>Application:</strong> Smart Tools Suite &bull; <strong>Effective Date:</strong> September 2026 &bull; <strong>Developer:</strong> OmniLabs</p>
+
+        <div class="highlight-box">
+            <strong>ðŸ› ï¸ On-Device Hardware Guarantee:</strong> Smart Tools processes all sensor inputs, camera viewports, and audio level meters entirely in local volatile memory. Zero telemetry or user monitoring.
+        </div>
+
+        <h2>1. Hardware Permissions & Sensor Processing</h2>
+        <ul>
+            <li><strong>Camera Permission:</strong> Used strictly in real-time to display the live optical viewfinder for the Magnifier, Screen Ruler, Surface Level, and Flashlight tools. No video frames, images, or photos are ever captured, recorded, or transmitted to any server.</li>
+            <li><strong>Microphone (Audio Recording) Permission:</strong> Used solely to compute real-time root-mean-square (RMS) sound pressure levels in decibels (dB) inside the Sound Meter tool. Audio buffers are processed in volatile RAM and immediately discarded. No audio is ever recorded or saved.</li>
+            <li><strong>Motion & Orientation Sensors:</strong> Accelerometer, Gyroscope, and Magnetometer data are filtered using local Exponential Moving Averages (EMA) to drive bubble levels, vibration meters, and compass navigation.</li>
+            <li><strong>Storage Access:</strong> Used only when the user explicitly exports or restores an encrypted JSON backup file of their pinned tools and custom theme preferences.</li>
+        </ul>
+
+        <h2>2. Data Collection & Sharing (Google Play Data Safety)</h2>
+        <p>Smart Tools complies with strict Google Play Data Safety requirements:</p>
+        <ul>
+            <li>No personal identity or contact information is collected.</li>
+            <li>No location tracking or location history is logged.</li>
+            <li>No behavioral surveillance or sensor data harvesting takes place.</li>
+        </ul>
+
+        <h2>3. In-App Purchases & Subscriptions</h2>
+        <p>Pro feature upgrades and subscriptions are processed securely through official <strong>Google Play In-App Billing (v7)</strong> APIs. OmniLabs never accesses or stores your credit card numbers or banking information.</p>
+
+        <h2>4. Developer Contact & Inquiries</h2>
+        <p>For technical support, bug reports, or privacy inquiries, contact our engineering team at:</p>
+        <p><strong>Email:</strong> app.omnilabs.dev@gmail.com<br><strong>Studio:</strong> OmniLabs</p>
+
+        <footer>
+            &copy; 2026 OmniLabs. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
