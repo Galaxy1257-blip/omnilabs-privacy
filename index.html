@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniLabs Legal & Privacy Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0B0F17;
+            --surface: #141B26;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #F8FAFC;
+            --text-muted: #94A3B8;
+            --primary: #38BDF8;
+            --accent-emerald: #10B981;
+            --accent-gold: #F59E0B;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+        .container { max-width: 840px; margin: 0 auto; width: 100%; }
+        header { text-align: center; margin-bottom: 50px; }
+        .badge { display: inline-block; padding: 6px 14px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 999px; color: var(--primary); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
+        p.subtitle { color: var(--text-muted); font-size: 16px; max-width: 580px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 50px; }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: all 0.25s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-4px); border-color: rgba(255, 255, 255, 0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .card-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
+        .card-hikmah .card-icon { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+        .card-smarttools .card-icon { background: rgba(245, 158, 11, 0.15); color: var(--accent-gold); }
+        .card h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .card p { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
+        .card-link { font-size: 14px; font-weight: 600; color: var(--primary); display: flex; align-items: center; gap: 6px; }
+        footer { text-align: center; border-top: 1px solid var(--border); padding-top: 30px; color: var(--text-muted); font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Official Compliance Portal</div>
+            <h1>OmniLabs Legal & Privacy Hub</h1>
+            <p class="subtitle">Complete transparency, on-device data processing guarantees, and privacy policies for all OmniLabs mobile applications.</p>
+        </header>
+
+        <div class="grid">
+            <a href="hikmah.html" class="card card-hikmah">
+                <div>
+                    <div class="card-icon">ðŸ•Œ</div>
+                    <h2>Hikmah App</h2>
+                    <p>Quran, Prayer Times, Daily Azkar & Hadith Sanctuary. 100% on-device GPS prayer mathematics and zero personal data tracking.</p>
+                </div>
+                <div class="card-link">View Privacy Policy & Data Safety &rarr;</div>
+            </a>
+
+            <a href="smarttools.html" class="card card-smarttools">
+                <div>
+                    <div class="card-icon">ðŸ› ï¸</div>
+                    <h2>Smart Tools Suite</h2>
+                    <p>Precision sensors, measurement & everyday utilities. Local hardware sensor processing (Camera, Decibel Mic, Accelerometers).</p>
+                </div>
+                <div class="card-link">View Privacy Policy & Data Safety &rarr;</div>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 OmniLabs. All rights reserved. &bull; Contact: <strong>app.omnilabs.dev@gmail.com</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
