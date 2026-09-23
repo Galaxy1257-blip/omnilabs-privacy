@@ -15,56 +15,80 @@
             --primary: #38BDF8;
             --accent-emerald: #10B981;
             --accent-gold: #F59E0B;
+            --accent-purple: #A855F7;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
         body { background: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
-        .container { max-width: 840px; margin: 0 auto; width: 100%; }
+        .container { max-width: 960px; margin: 0 auto; width: 100%; }
         header { text-align: center; margin-bottom: 50px; }
         .badge { display: inline-block; padding: 6px 14px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 999px; color: var(--primary); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
         h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; }
-        p.subtitle { color: var(--text-muted); font-size: 16px; max-width: 580px; margin: 0 auto; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 50px; }
-        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: all 0.25s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
+        p.subtitle { color: var(--text-muted); font-size: 16px; max-width: 620px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 50px; }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 28px; transition: all 0.25s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; justify-content: space-between; }
         .card:hover { transform: translateY(-4px); border-color: rgba(255, 255, 255, 0.2); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
         .card-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin-bottom: 20px; }
         .card-hikmah .card-icon { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
         .card-smarttools .card-icon { background: rgba(245, 158, 11, 0.15); color: var(--accent-gold); }
-        .card h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
-        .card p { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
-        .card-link { font-size: 14px; font-weight: 600; color: var(--primary); display: flex; align-items: center; gap: 6px; }
+        .card-terms .card-icon { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+        .card h2 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .card p { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; flex-grow: 1; }
+        .card-link { font-size: 13px; font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 6px; }
         footer { text-align: center; border-top: 1px solid var(--border); padding-top: 30px; color: var(--text-muted); font-size: 13px; }
+        .nav-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+        .nav-links a { color: var(--primary); text-decoration: none; font-size: 13px; font-weight: 600; }
+        .nav-links a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="badge">Official Compliance Portal</div>
-            <h1>OmniLabs Legal & Privacy Hub</h1>
-            <p class="subtitle">Complete transparency, on-device data processing guarantees, and privacy policies for all OmniLabs mobile applications.</p>
+            <div class="badge">Official Legal & Compliance Portal</div>
+            <h1>OmniLabs Portal</h1>
+            <p class="subtitle">Official Privacy Policies, On-Device Data Safety Guarantees, and Terms of Service for all mobile applications published by OmniLabs.</p>
         </header>
 
         <div class="grid">
+            <!-- 1. Hikmah Privacy -->
             <a href="hikmah.html" class="card card-hikmah">
                 <div>
                     <div class="card-icon">&#128332;</div>
-                    <h2>Hikmah App</h2>
-                    <p>Quran, Prayer Times, Daily Azkar & Hadith Sanctuary. 100% on-device GPS prayer mathematics and zero personal data tracking.</p>
+                    <h2>Hikmah Privacy Policy</h2>
+                    <p>Quran, Prayer Times, Daily Azkar & Hadith. 100% on-device GPS prayer math and zero personal data tracking.</p>
                 </div>
-                <div class="card-link">View Privacy Policy & Data Safety &rarr;</div>
+                <div class="card-link">View Hikmah Privacy &rarr;</div>
             </a>
 
+            <!-- 2. Smart Tools Privacy -->
             <a href="smarttools.html" class="card card-smarttools">
                 <div>
                     <div class="card-icon">&#128736;&#65039;</div>
-                    <h2>Smart Tools Suite</h2>
-                    <p>Precision sensors, measurement & everyday utilities. Local hardware sensor processing (Camera, Decibel Mic, Accelerometers).</p>
+                    <h2>Smart Tools Privacy Policy</h2>
+                    <p>Sensors & measurement utilities. Real-time viewport camera, volatile RAM decibel meter, and zero telemetry.</p>
                 </div>
-                <div class="card-link">View Privacy Policy & Data Safety &rarr;</div>
+                <div class="card-link">View Smart Tools Privacy &rarr;</div>
+            </a>
+
+            <!-- 3. Terms of Service -->
+            <a href="terms.html" class="card card-terms">
+                <div>
+                    <div class="card-icon">&#128220;</div>
+                    <h2>Terms of Service (ToS)</h2>
+                    <p>Master legal terms, Google Play In-App Billing subscription policies, license terms, and tool liability disclaimers.</p>
+                </div>
+                <div class="card-link">View Terms of Service &rarr;</div>
             </a>
         </div>
 
         <footer>
-            <p>&copy; 2026 OmniLabs. All rights reserved. &bull; Contact: <strong>app.omnilabs.dev@gmail.com</strong></p>
+            <div class="nav-links">
+                <a href="hikmah.html">Hikmah Privacy</a>
+                <span>&bull;</span>
+                <a href="smarttools.html">Smart Tools Privacy</a>
+                <span>&bull;</span>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <p>&copy; 2026 OmniLabs. All rights reserved. &bull; Developer Contact: <strong>app.omnilabs.dev@gmail.com</strong></p>
         </footer>
     </div>
 </body>
